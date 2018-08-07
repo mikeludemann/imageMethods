@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+img {
+    width: 100%;
+}
+
+.image--container {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.image--container img {
+    vertical-align: middle;
+}
+
+.image--container .image--content {
+    position: absolute;
+    bottom: -1;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    opacity: 0.0;
+    transition: all 1s ease-in-out;
+}
+
+.image--container:hover .image--content {
+    transform: translateY(-100%);
+    opacity: 1.0;
+    transition: all 1s ease-in-out;
+}
+
+.image--element {
+    flex: 0 0 auto;
+    width: 50%;
+    height: 50%;
+    position: relative;
+}

@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+img {
+    width: 100%;
+}
+
+.image--container {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.image--container img {
+    vertical-align: middle;
+}
+
+.image--container .image--content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    width: 100%;
+    padding: 10px;
+}
+
+.image--element {
+    flex: 0 0 auto;
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
