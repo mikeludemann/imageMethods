@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+            <img src="./assets/himmel.jpeg" class="shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/meer.jpg" class="shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/mountain.jpg" class="shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/vulkan.jpg" class="shadow cursor">
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span id="close" class="close cursor">&times;</span>
+        <div class="modal-content">
+            <div class="slideElement">
+                <img src="./assets/himmel.jpeg">
+            </div>
+            <div class="slideElement">
+                <img src="./assets/meer.jpg">
+            </div>
+            <div class="slideElement">
+                <img src="./assets/mountain.jpg">
+            </div>
+            <div class="slideElement">
+                <img src="./assets/vulkan.jpg">
+            </div>
+
+            <a id="prev">&#10094;</a>
+            <a id="next">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="column-overlay">
+                <div class="column">
+                    <img class="images cursor" src="./assets/himmel.jpeg" alt="Himmel">
+                </div>
+                <div class="column">
+                    <img class="images cursor" src="./assets/meer.jpg" alt="Meer und Ozean">
+                </div>
+                <div class="column">
+                    <img class="images cursor" src="./assets/mountain.jpg" alt="Berge">
+                </div>
+                <div class="column">
+                    <img class="images cursor" src="./assets/vulkan.jpg" alt="Vulkan">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
